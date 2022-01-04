@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "commit": "git-cz",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "standard-version"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -24,15 +22,5 @@
     "commitizen": "^4.2.4",
     "husky": "^7.0.4",
     "standard-version": "^9.3.2"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   }
 }
