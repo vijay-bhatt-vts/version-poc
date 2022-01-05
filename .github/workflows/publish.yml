@@ -12,12 +12,11 @@ on:
 jobs:
   quality:
 
-    runs-on: matrix.os
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node-version: [10.x, 12.x, 14.x, 16.x]
-        os: [ubuntu-latest, window-latest]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
