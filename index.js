@@ -1,1 +1,1 @@
-console.log("commit v1.0.0")
+console.log("check pull request")
