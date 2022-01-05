@@ -24,7 +24,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "tag" : "latest"
+    "tag" : "main"
   },
   "config": {
     "commitizen": {
