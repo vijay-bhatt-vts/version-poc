@@ -23,7 +23,7 @@
     "semantic-release": "^18.0.1"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "config": {
     "commitizen": {
