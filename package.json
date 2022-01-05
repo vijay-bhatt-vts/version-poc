@@ -1,14 +1,16 @@
 {
   "name": "version-poc",
-  "version": "1.0.3",
+  "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\"",
+    "semantic-release": "semantic-release --branches main",
+    "commit" : "git-cz"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vijay-bhatt-vts/version-poc.git"
+    "url": "https://github.com/vijay-bhatt-vts/version-poc.git"
   },
   "author": "",
   "license": "ISC",
@@ -17,10 +19,15 @@
   },
   "homepage": "https://github.com/vijay-bhatt-vts/version-poc#readme",
   "devDependencies": {
-    "@commitlint/cli": "^16.0.1",
-    "@commitlint/config-conventional": "^16.0.0",
-    "commitizen": "^4.2.4",
-    "husky": "^7.0.4",
-    "standard-version": "^9.3.2"
+    "cz-conventional-changelog": "^3.3.0",
+    "semantic-release": "^18.0.1"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
