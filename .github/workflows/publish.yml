@@ -5,7 +5,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main , staging , preprod]
   pull_request:
     branches: '*'
 
@@ -31,7 +31,7 @@ jobs:
   publish:
 
     runs-on: ubuntu-latest
-    if: ${{ github.ref == 'refs/heads/main'}}
+    if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/staging' || github.ref == 'refs/heads/preprod'}}
     needs: [quality]
     steps:
     - uses: actions/checkout@v2
