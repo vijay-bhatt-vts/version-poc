@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "semantic-release": "semantic-release --branches main",
-    "commit" : "git-cz"
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
