@@ -18,6 +18,6 @@ ls $project_root/version-poc
  cat $project_root/version-poc/package.json
 
 cat $project_root/version-poc/package.json | jq \
- '.publishConfig.tag |= $branch' > "$tmp" && mv "$tmp" $project_root/version-poc/package.json
+ '.publishConfig.tag |= $branch' | sponge $project_root/version-poc/package.json
 
 cat $project_root/version-poc/package.json
