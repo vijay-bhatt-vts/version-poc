@@ -19,6 +19,6 @@ ls $project_root/version-poc
 
 cat $project_root/version-poc/package.json | jq \
   --arg tagname $branch \
- '.publishConfig.tag |= $tagname' | tee $project_root/version-poc/package.json
+ '.publishConfig.tag |= $tagname' > $project_root/version-poc/package.json
 
 cat $project_root/version-poc/package.json
