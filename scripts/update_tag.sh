@@ -10,11 +10,6 @@ echo $branch
 project_root=$(dirname $(dirname $(dirname $(realpath $0 ))))
 echo $project_root
 
-
-
-cat $project_root/version-poc/package.json | jq \
-  --arg tagname $branch \
- '.publishConfig.tag |= $tagname' | cat >| $project_root/version-poc/package.json
-
+sed -i 's/<<TAG_NAME>>/$branch/g' $project_root/version-poc/package.json
 
 cat $project_root/version-poc/package.json
