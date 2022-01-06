@@ -27,7 +27,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "tag": "main"
+    "tag": "staging"
 
   },
   "config": {
