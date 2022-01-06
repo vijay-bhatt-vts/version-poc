@@ -8,29 +8,15 @@ on:
     branches: [ main , staging , preprod]
 
 jobs:
-  # quality:
-
-  #   runs-on: ubuntu-latest
-
-  #   strategy:
-  #     matrix:
-  #       node-version: [16.x]
-  #       # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
-  #   steps:
-  #   - uses: actions/checkout@v2
-  #   - name: Use Node.js ${{ matrix.node-version }}
-  #     uses: actions/setup-node@v2
-  #     with:
-  #       node-version: ${{ matrix.node-version }}
-  #       cache: 'npm'
-  #   - run: npm ci
-  #   - run: npm test
-  publish:
+  quality:
 
     runs-on: ubuntu-latest
-    if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/staging' || github.ref == 'refs/heads/preprod'}}
-    # needs: [quality]
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
@@ -38,10 +24,23 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    # - run: npm ci
+    - run: npm test
+  publish:
+
+    runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/staging' || github.ref == 'refs/heads/preprod'}}
+    needs: [quality]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
     - name: Update package.json publish tag
       run: ./scripts/update_tag.sh  
-    # - run: npm run semantic-release 
-    #   env: 
-    #      NPM_TOKEN: ${{secrets.NPM_TOKEN }}
-    #      GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+    - run: npm run semantic-release 
+      env: 
+         NPM_TOKEN: ${{secrets.NPM_TOKEN }}
+         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
