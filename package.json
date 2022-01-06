@@ -27,7 +27,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "tag": ""
+    "tag": "<<TAG_NAME>>"
 
   },
   "config": {
