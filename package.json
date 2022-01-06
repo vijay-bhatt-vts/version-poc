@@ -27,7 +27,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "tag": "preprod"
+    "tag": ""
 
   },
   "config": {
