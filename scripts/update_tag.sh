@@ -15,10 +15,14 @@ ls $project_root/version-poc
 # data_dir="$project_root/examples/data"
 # echo "DATA: $data_dir"
 
- cat $project_root/version-poc/package.json
+# cat $project_root/version-poc/package.json | jq \
+#   --arg tagname $branch \
+#  '.publishConfig.tag |= $tagname' > $project_root/version-poc/package.json
 
-cat $project_root/version-poc/package.json | jq \
+ username=$(echo cat $project_root/version-poc/package.json | jq \
   --arg tagname $branch \
- '.publishConfig.tag |= $tagname' > $project_root/version-poc/package.json
+ '.publishConfig.tag |= $tagname')
+
+ echo $username
 
 cat $project_root/version-poc/package.json
