@@ -16,6 +16,6 @@ ls $project_root/version-poc
 # echo "DATA: $data_dir"
 
 cat $project_root/version-poc/package.json | jq \
- '.publishConfig.tag |= $branch' > "$tmp" && mv "$tmp" ../package.json
+ '.publishConfig.tag |= $branch' > "$tmp" && mv "$tmp" $project_root/version-poc/package.json
 
  cat $project_root/package.json
