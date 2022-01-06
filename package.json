@@ -26,8 +26,7 @@
     "branches": ["preprod", {"name": "main", "prerelease": true},{"name": "staging", "prerelease": true},{"name": "staging1", "prerelease": true}]
   },
   "publishConfig": {
-    "access": "public",
-    "tag": "<<TAG_NAME>>"
+    "access": "public"
 
   },
   "config": {
