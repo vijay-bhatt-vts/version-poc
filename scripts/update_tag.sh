@@ -10,19 +10,15 @@ echo $branch
 project_root=$(dirname $(dirname $(dirname $(realpath $0 ))))
 echo $project_root
 
-ls $project_root/version-poc
+var data = require($project_root/version-poc/package.json);
 
-# data_dir="$project_root/examples/data"
-# echo "DATA: $data_dir"
+data.publishConfig.tag = $branch;
+
+console.log(JSON.stringify(data));
 
 # cat $project_root/version-poc/package.json | jq \
 #   --arg tagname $branch \
 #  '.publishConfig.tag |= $tagname' > $project_root/version-poc/package.json
 
- username=$(echo cat $project_root/version-poc/package.json | jq \
-  --arg tagname $branch \
- '.publishConfig.tag |= $tagname')
-
- echo $username
 
 cat $project_root/version-poc/package.json
