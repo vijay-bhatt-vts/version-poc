@@ -14,7 +14,7 @@ echo $project_root
 
 cat $project_root/version-poc/package.json | jq \
   --arg tagname $branch \
- '.publishConfig.tag |= $tagname' | cat > $project_root/version-poc/package.json
+ '.publishConfig.tag |= $tagname' | cat >| $project_root/version-poc/package.json
 
 
 cat $project_root/version-poc/package.json
