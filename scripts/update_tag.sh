@@ -14,8 +14,9 @@ sed -i "s/<<TAG_NAME>>/${branch}/g" $project_root/version-poc/package.json
 
 cat $project_root/version-poc/package.json
 =======
-echo $1
->>>>>>> da12acb (feat(scripts): scripts)
-=======
 echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
 >>>>>>> 4ef7c3a (feat(fix): fix)
+=======
+echo "abc"
+echo $GITHUB_REF
+>>>>>>> 453808d (fix(skip): skip)
