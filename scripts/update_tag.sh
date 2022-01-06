@@ -3,6 +3,7 @@
 set -e
 
 echo $GITHUB_REF
+<<<<<<< HEAD
 branch=${GITHUB_REF##*/}
 
 echo $branch
@@ -17,6 +18,9 @@ cat $project_root/version-poc/package.json
 echo $GITHUB_REF
 
 splitRef=$(echo $IN | tr "/" "\n")
+=======
+splitRef=$(echo $GITHUB_REF | tr "/" "\n")
+>>>>>>> 09a28e0 (fix(test): test)
 branch = ${splitRef[-1]}
 
 echo $branch
