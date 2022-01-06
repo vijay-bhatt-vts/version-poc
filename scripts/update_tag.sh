@@ -24,8 +24,12 @@ splitRef=$(echo $GITHUB_REF | tr "/" "\n")
 >>>>>>> 09a28e0 (fix(test): test)
 =======
 echo $splitRef
+<<<<<<< HEAD
 >>>>>>> b56e508 (fix(fix): fix)
 branch = ${splitRef[-1]}
+=======
+branch = ${splitRef[${#splitRef[@]} - 1]}
+>>>>>>> 6d139fb (fix(fix): fix)
 
 echo $branch
 
