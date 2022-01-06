@@ -3,10 +3,7 @@
 set -e
 
 echo $GITHUB_REF
-echo ${GITHUB_REF##*/}
-splitRef=$(echo $GITHUB_REF | tr "/" "\n")
-echo $splitRef
-branch=${splitRef[${#splitRef[@]} - 1]}
+branch=${GITHUB_REF##*/}
 
 echo $branch
 
@@ -16,7 +13,7 @@ echo $project_root
 # data_dir="$project_root/examples/data"
 # echo "DATA: $data_dir"
 
-# cat ../package.json | jq \
-#  '.publishConfig.tag |= $branch' > "$tmp" && mv "$tmp" ../package.json
+cat $project_root/package.json | jq \
+ '.publishConfig.tag |= $branch' > "$tmp" && mv "$tmp" ../package.json
 
-#  cat ../package.json
+ cat $project_root/package.json
