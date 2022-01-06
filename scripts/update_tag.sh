@@ -2,4 +2,5 @@
 
 set -e
 
-echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+echo "abc"
+echo $GITHUB_REF
