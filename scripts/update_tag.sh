@@ -12,9 +12,9 @@ echo $project_root
 
 
 
-# cat $project_root/version-poc/package.json | jq \
-#   --arg tagname $branch \
-#  '.publishConfig.tag |= $tagname' > $project_root/version-poc/package.json
+cat $project_root/version-poc/package.json | jq \
+  --arg tagname $branch \
+ '.publishConfig.tag |= $tagname' | cat
 
 
 cat $project_root/version-poc/package.json
