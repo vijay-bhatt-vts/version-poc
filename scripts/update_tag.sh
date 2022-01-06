@@ -2,6 +2,7 @@
 
 set -e
 
+<<<<<<< HEAD
 echo $GITHUB_REF
 branch=${GITHUB_REF##*/}
 
@@ -13,3 +14,6 @@ echo $project_root
 sed -i "s/<<TAG_NAME>>/${branch}/g" $project_root/version-poc/package.json
 
 cat $project_root/version-poc/package.json
+=======
+echo $1
+>>>>>>> da12acb (feat(scripts): scripts)
