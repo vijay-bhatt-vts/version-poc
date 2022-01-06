@@ -3,7 +3,7 @@
 set -e
 
 echo $GITHUB_REF
-splitRef=$(echo $IN | tr "/" "\n")
+splitRef=$(echo $GITHUB_REF | tr "/" "\n")
 branch = ${splitRef[-1]}
 
 echo $branch
