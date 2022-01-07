@@ -9,7 +9,7 @@ echo $branch
 lasttag=$(git tag | grep ${branch} | tail -1)
 
 
-# echo $lasttag
+echo $lasttag
 
 # git tag -d $lasttag
 # git push --delete origin $lasttag  
