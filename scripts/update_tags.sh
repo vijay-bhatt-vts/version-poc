@@ -7,6 +7,8 @@ set -e
 #branch="staging1"
 branch=$(git rev-parse --abbrev-ref HEAD)
 
+git tag
+
 echo $branch
 
 lasttag=$(git tag | grep $branch | tail -1)
