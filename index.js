@@ -6,4 +6,5 @@ module.exports.helloWorld = function () {
 
     console.log("Preprod fix")
 
+    console.log('Added staging 1')
   };
