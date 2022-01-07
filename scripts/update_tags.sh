@@ -4,10 +4,10 @@ set -e
 
 echo $GITHUB_REF
 branch=${GITHUB_REF##*/}
+#branch="staging1"
 
 echo $branch
-git --version
-git tag | grep $branch
+
 lasttag=$(git tag | grep $branch | tail -1)
 
 
