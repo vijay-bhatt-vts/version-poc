@@ -28,7 +28,7 @@ jobs:
   publish:
 
     runs-on: ubuntu-latest
-    if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/staging' || contains(github.ref, "staging") || github.ref == 'refs/heads/preprod'}}
+    if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/staging' || contains(github.ref, 'staging') || github.ref == 'refs/heads/preprod'}}
     needs: [quality]
     steps:
     - uses: actions/checkout@v2
