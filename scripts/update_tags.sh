@@ -2,9 +2,10 @@
 
 set -e
 
-echo $GITHUB_REF
-branch=${GITHUB_REF##*/}
+#echo $GITHUB_REF
+#branch=${GITHUB_REF##*/}
 #branch="staging1"
+branch=$(git rev-parse --abbrev-ref HEAD)
 
 echo $branch
 
