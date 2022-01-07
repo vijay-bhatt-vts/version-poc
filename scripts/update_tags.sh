@@ -7,6 +7,7 @@ branch=${GITHUB_REF##*/}
 
 echo $branch
 git --version
+git tag | grep $branch
 lasttag=$(git tag | grep $branch | tail -1)
 
 
