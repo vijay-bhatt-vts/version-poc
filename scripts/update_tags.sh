@@ -6,15 +6,15 @@ echo $GITHUB_REF
 branch=${GITHUB_REF##*/}
 
 echo $branch
-git tag | grep $branch | tail -1 | read lasttag
+git tag | grep $branch | tail -1
 
 
-echo $lasttag
+# echo $lasttag
 
-git tag -d $lasttag
-git push --delete origin $lasttag  
-git tag $lasttag
-git push origin $lasttag
+# git tag -d $lasttag
+# git push --delete origin $lasttag  
+# git tag $lasttag
+# git push origin $lasttag
 
-git notes --ref semantic-release add -f -m '{"channels":${branch}}' $lasttag
-git push --force origin refs/notes/semantic-release
+# git notes --ref semantic-release add -f -m '{"channels":${branch}}' $lasttag
+# git push --force origin refs/notes/semantic-release
