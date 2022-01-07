@@ -23,7 +23,7 @@
     "semantic-release": "^18.0.1"
   },
   "release": {
-    "branches": ["preprod" , "staging", "main"]
+    "branches": ["main"]
   },
   "publishConfig": {
     "access": "public",
