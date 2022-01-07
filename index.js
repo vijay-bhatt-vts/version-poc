@@ -4,8 +4,6 @@ module.exports.helloWorld = function () {
 
     console.log("Hello world main latest 123");
 
-    console.log("Preprod fix")
-
-    console.log("staging 1 again")
+    console.log("major change in staging 1")
 
   };
