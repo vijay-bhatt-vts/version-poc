@@ -4,6 +4,4 @@ module.exports.helloWorld = function () {
 
     console.log("Hello world main");
 
-    console.log("Preprod fix")
-
   };
