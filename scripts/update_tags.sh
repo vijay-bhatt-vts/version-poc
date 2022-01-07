@@ -6,7 +6,7 @@ echo $GITHUB_REF
 branch=${GITHUB_REF##*/}
 
 echo $branch
-lasttag=$(git tag | grep ${branch} | tail -1)
+lasttag=$(git tag | grep $branch | tail -1)
 
 
 echo $lasttag
