@@ -7,7 +7,7 @@ set -e
 #branch="staging1"
 branch=$(git rev-parse --abbrev-ref HEAD)
 
-git tag
+#git tag
 
 echo $branch
 
