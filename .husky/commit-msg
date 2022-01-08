@@ -2,4 +2,5 @@
 . "$(dirname "$0")/_/husky.sh"
 
 #npx --no -- commitlint --edit $1
-git-cz check --commit-msg-file COMMIT_MSG_FILE
+MSG_FILE=$1
+npx cz --commit-msg-file $MSG_FILE
