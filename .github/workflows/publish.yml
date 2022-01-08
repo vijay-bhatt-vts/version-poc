@@ -51,11 +51,12 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-        fetch-depth: 0
     - name: Update tags
       run: |
           branch=$(git rev-parse --abbrev-ref HEAD)
           echo $branch
+          git fetch --unshallow --tags
+          echo $?
           lasttag=$(git for-each-ref --sort=creatordate --format '%(refname) %(creatordate)' refs/tags)
           echo $lasttag
     - run: npm ci 
