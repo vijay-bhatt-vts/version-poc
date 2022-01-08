@@ -6,7 +6,7 @@ branch=$(git rev-parse --abbrev-ref HEAD)
 
 echo $branch
 
-lasttag=$(git for-each-ref --sort=creatordate --format '%(refname) %(creatordate)' refs/tags | grep staging1 | tail -1 | cut -d " " -f 1 | cut -d "/" -f 3)
+lasttag=$(git for-each-ref --sort=creatordate --format '%(refname) %(creatordate)' refs/tags | grep $branch | tail -1 | cut -d " " -f 1 | cut -d "/" -f 3)
 
 echo $lasttag
 
