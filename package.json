@@ -38,13 +38,6 @@
         "name": "staging1",
         "prerelease": true
       }
-    ],
-    "prepare": [
-      "@semantic-release/npm",
-      {
-        "path": "@semantic-release/exec",
-        "cmd": "echo ${nextRelease.version}"
-      }
     ]
   },
   "publishConfig": {
