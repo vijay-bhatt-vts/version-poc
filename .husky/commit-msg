@@ -1,6 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-#npx --no -- commitlint --edit $1
-MSG_FILE=$1
-npx cz
+npx --no -- commitlint --edit $1
+
