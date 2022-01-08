@@ -39,13 +39,12 @@
         "prerelease": true
       }
     ],
-    "plugins": [
-        [
-          "@semantic-release/exec",
-          {
-            "verifyReleaseCmd": "echo ${nextRelease.version} > .VERSION"
-          }
-        ]
+    "prepare": [
+      "@semantic-release/npm",
+      {
+        "path": "@semantic-release/exec",
+        "cmd": "echo ${nextRelease.version}"
+      }
     ]
   },
   "publishConfig": {
