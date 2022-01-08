@@ -28,11 +28,7 @@
   },
   "release": {
     "branches": [
-      "preprod",
-      {
-        "name": "main",
-        "prerelease": true
-      },
+      "main",
       {
         "name": "staging",
         "prerelease": true
