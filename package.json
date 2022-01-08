@@ -7,7 +7,8 @@
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\"",
     "semantic-release": "semantic-release",
-    "commit": "git cz"
+    "commit": "git cz",
+    "check": "cz check --message 'abc'"
   },
   "repository": {
     "type": "git",
