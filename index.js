@@ -6,6 +6,6 @@ module.exports.helloWorld = function () {
 
     console.log("major change in staging 1 breaking");
 
-    console.log("added coding format ")
+    console.log("added coding format 1")
 
   };
