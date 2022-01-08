@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare":"husky install",
     "test": "echo \"Error: no test specified\"",
     "semantic-release": "semantic-release",
     "commit": "git cz"
@@ -46,12 +47,6 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "git cz --hook || true",
-      "pre-commit": "echo \"Husky] pre-commit\""
     }
   }
 }
