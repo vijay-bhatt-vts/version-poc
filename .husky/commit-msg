@@ -3,4 +3,4 @@
 
 #npx --no -- commitlint --edit $1
 MSG_FILE=$1
-npx cz --commit-msg-file $MSG_FILE
+npx cz
