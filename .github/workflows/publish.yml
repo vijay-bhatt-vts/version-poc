@@ -56,7 +56,7 @@ jobs:
       run: |
           branch=$(git rev-parse --abbrev-ref HEAD)
           echo $branch
-          git for-each-ref --sort=creatordate --format '%(refname) %(creatordate)' refs/tags | grep staging1 | tail -1 | cut -d " " -f 1 | cut -d "/" -f 3
+          git for-each-ref --sort=creatordate --format '%(refname) %(creatordate)' refs/tags
           echo $lasttag
     - run: npm ci 
     - run: npm run semantic-release 
