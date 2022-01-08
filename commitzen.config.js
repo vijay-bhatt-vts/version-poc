@@ -14,10 +14,8 @@ module.exports = {
     {value: 'WIP',      name: 'WIP:      Work in progress'}
   ],
 
-  skipQuestions: ['scope','body','footer'],
-
 
   // limit subject length
-  subjectLimit: 10
+  subjectLimit: 200
 
 };
