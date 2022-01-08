@@ -1,3 +1,4 @@
+npx semantic-release --dry-run --no-ci | grep -i "Published release" > .semver-output
 
 LATEST_VERSION=$(cat .semver-output | cut -d " " -f 8)
 echo "latest version $LATEST_VERSION"
