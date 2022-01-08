@@ -2,17 +2,11 @@
 
 set -e
 
-#echo $GITHUB_REF
-#branch=${GITHUB_REF##*/}
-#branch="staging1"
 branch=$(git rev-parse --abbrev-ref HEAD)
-
-#git tag
 
 echo $branch
 
-lasttag=$(git tag | grep $branch | tail -1)
-
+lasttag=$(git for-each-ref --sort=creatordate --format '%(refname) %(creatordate)' refs/tags | grep staging1 | tail -1 | cut -d " " -f 1 | cut -d "/" -f 3)
 
 echo $lasttag
 
