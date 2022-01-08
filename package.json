@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "semantic-release": "semantic-release",
-    "commit": "git-cz",
-    "commitmsg": "validate-commit-msg"
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -22,8 +21,7 @@
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^7.0.4",
-    "semantic-release": "^18.0.1",
-    "validate-commit-msg": "^2.14.0"
+    "semantic-release": "^18.0.1"
   },
   "release": {
     "branches": [
