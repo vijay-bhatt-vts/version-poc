@@ -50,7 +50,8 @@
   },
   "husky": {
     "hooks": {
-      "prepare-commit-msg": "git cz --hook || true"
+      "prepare-commit-msg": "git cz --hook || true",
+      "pre-commit": "echo \"Husky] pre-commit\""
     }
   }
 }
