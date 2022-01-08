@@ -8,6 +8,24 @@ on:
     branches: [ main , 'staging**']
 
 jobs:
+  debug:
+    name: Debug
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Set up secret file
+      env:
+        NPM_TOKEN: ${{secrets.NPM_TOKEN }}
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      run: |
+        echo $NPM_TOKEN >> secrets.txt
+        echo $GITHUB_TOKEN >> secrets.txt
+
+    - name: Run tmate
+      uses: mxschmitt/action-tmate@v2
   quality:
 
     runs-on: ubuntu-latest

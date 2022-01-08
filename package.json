@@ -7,8 +7,7 @@
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\"",
     "semantic-release": "semantic-release",
-    "commit": "git cz",
-    "check": "cz check --message 'abc'"
+    "commit": "git cz"
   },
   "repository": {
     "type": "git",
@@ -24,7 +23,6 @@
     "@commitlint/cli": "^16.0.1",
     "@commitlint/config-conventional": "^16.0.0",
     "cz-conventional-changelog": "^3.3.0",
-    "cz-customizable": "^6.3.0",
     "husky": "^7.0.4",
     "semantic-release": "^18.0.1"
   },
@@ -40,16 +38,14 @@
         "prerelease": true
       }
     ]
+  
   },
   "publishConfig": {
     "access": "public"
   },
   "config": {
-    "commitizen": { 
-      "path": "node_modules/cz-customizable"
-    },
-    "cz-customizable": {
-      "config": "commitzen.config.js"
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
     }
   }
 }
