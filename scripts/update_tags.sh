@@ -4,7 +4,7 @@ set -e
 
 branch=$(git rev-parse --abbrev-ref HEAD)
 echo $branch
-#git fetch --unshallow --tags
+git fetch --unshallow --tags
 
 main="main"
 if [ "$branch" == "$main" ] 
