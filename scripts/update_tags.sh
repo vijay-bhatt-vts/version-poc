@@ -23,6 +23,8 @@ git push --delete origin $lasttag
 git tag $lasttag
 git push origin $lasttag
 
+
+
 if [ "$branch" -ne "$main" ] 
 then
     git notes --ref semantic-release add -f -m "{\"channels\":[\"$branch\"]}" $lasttag
