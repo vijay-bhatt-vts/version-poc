@@ -16,12 +16,12 @@ else
     echo $lasttag
 fi
 
-echo "{'channels':$branch}"
+echo "{\"channels\":[\"$branch\"]}"
 
 git tag -d $lasttag
 git push --delete origin $lasttag  
 git tag $lasttag
 git push origin $lasttag
 
-git notes --ref semantic-release add -f -m "{'channels':$branch}" $lasttag
+git notes --ref semantic-release add -f -m "{\"channels\":[\"$branch\"]}" $lasttag
 git push --force origin refs/notes/semantic-release
