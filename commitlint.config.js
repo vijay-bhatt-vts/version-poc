@@ -26,6 +26,7 @@ module.exports = {
 },
 parserPreset: {
     parserOpts: {
+        referenceActions: null,
         issuePrefixes: ['RISE-']
     }
 },
