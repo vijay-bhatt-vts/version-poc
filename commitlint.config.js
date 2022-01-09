@@ -1,4 +1,6 @@
-module.exports = {extends: ['@commitlint/config-conventional'],
+module.exports = {
+    //plugins: ['commitlint-plugin-jira-rules'],
+    extends: ['@commitlint/config-conventional'],
 "rules": {
     'type-enum': [
         2,
@@ -20,6 +22,12 @@ module.exports = {extends: ['@commitlint/config-conventional'],
         'always',
         ['Resident','Staff', 'PM', 'Payment', 'Automation']
     ]
+
+},
+parserPreset: {
+    parserOpts: {
+        issuePrefixes: ['RISE-']
+    }
 },
 prompt: {
     settings: {
