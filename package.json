@@ -7,7 +7,7 @@
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\"",
     "semantic-release": "semantic-release",
-    "commit": "git cz"
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,9 @@
   "devDependencies": {
     "@commitlint/cli": "^16.0.1",
     "@commitlint/config-conventional": "^16.0.0",
+    "@commitlint/cz-commitlint": "^16.0.0",
     "@commitlint/prompt": "^16.0.0",
+    "@commitlint/prompt-cli": "^16.0.0",
     "@semantic-release/exec": "^6.0.3",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^7.0.4",
@@ -46,7 +48,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "@commitlint/prompt"
+      "path": "@commitlint/cz-commitlint"
     }
   }
 }
