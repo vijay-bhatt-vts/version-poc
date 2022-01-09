@@ -52,12 +52,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Update tags
-      run: |
-          branch=$(git rev-parse --abbrev-ref HEAD)
-          echo $branch
-          git fetch --unshallow --tags
-          lasttag=$(git for-each-ref --sort=creatordate --format '%(refname) %(creatordate)' refs/tags| grep $branch | tail -1 | cut -d " " -f 1 | cut -d "/" -f 3)
-          echo $lasttag
+    - run: ./scripts/update_tags.sh
     - run: npm ci 
     - run: npm run semantic-release 
       env: 
