@@ -2,10 +2,13 @@ console.log("check pull request");
 
 module.exports.helloWorld = function () {
 
+<<<<<<< HEAD
     console.log("Hello world 1234");
+=======
+>>>>>>> 5de3b94954137286086f32b816ec2e4279da686f
 
-    console.log("major change in staging 1 breaking");
+    console.log("Hello world main latest 123456");
 
-    console.log("added coding format 1 abcdefgHI")
+   
 
   };
