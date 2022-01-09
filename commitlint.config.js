@@ -10,7 +10,7 @@ module.exports = {extends: ['@commitlint/config-conventional'],
         ],
     ],
     'scope-empty': [2, 'always'],
-    'references-empty':[2,'always']
+    'footer-empty':[2,'always']
 },
 prompt: {
     settings:{
