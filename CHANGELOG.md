@@ -1,3 +1,11 @@
+# [8.1.0-staging1.1](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.0.6-staging1.2...v8.1.0-staging1.1) (2022-01-10)
+
+
+### Features
+
+* **index.js:** checking pull request merge ([f2b5595](https://github.com/vijay-bhatt-vts/version-poc/commit/f2b559594bf8eb7372ec14fcf034e8f84c56ee74))
+* **Resident:** ok ([bf14f00](https://github.com/vijay-bhatt-vts/version-poc/commit/bf14f00483f1e9d3caf8576eca8cea4e10d7b381))
+
 ## [8.0.6-staging1.2](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.0.6-staging1.1...v8.0.6-staging1.2) (2022-01-10)
 
 
