@@ -1,3 +1,10 @@
+## [8.0.5](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.0.4...v8.0.5) (2022-01-10)
+
+
+### Bug Fixes
+
+* **release:** ok ([dff6657](https://github.com/vijay-bhatt-vts/version-poc/commit/dff66574decc4d29fc33c03df61066a3bea57b55))
+
 ## [8.0.4](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.0.3...v8.0.4) (2022-01-10)
 
 
