@@ -1,9 +1,10 @@
 {
-  "name": "version-poc",
-  "version": "0.0.0-development",
+  "name": "version-poc1",
+  "version": "8.0.6-staging1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare": "husky install",
     "test": "echo \"Error: no test specified\"",
     "semantic-release": "semantic-release",
     "commit": "git-cz"
@@ -19,20 +20,56 @@
   },
   "homepage": "https://github.com/vijay-bhatt-vts/version-poc#readme",
   "devDependencies": {
-    "cz-conventional-changelog": "^3.3.0",
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@commitlint/cz-commitlint": "^16.0.0",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "commitizen": "^4.2.4",
+    "husky": "^7.0.4",
     "semantic-release": "^18.0.1"
   },
   "release": {
-    "branches": ["main", "staging", "preprod"]
+    "branches": [
+      "main",
+      {
+        "name": "staging",
+        "prerelease": true
+      },
+      {
+        "name": "staging1",
+        "prerelease": true
+      }
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n RISE-${nextRelease.version} ${nextRelease.notes}"
+        }
+      ],
+      "@semantic-release/github"
+    ]
   },
   "publishConfig": {
-    "access": "public",
-    "tag": "<<TAG_NAME>>"
-
+    "access": "public"
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "@commitlint/cz-commitlint"
     }
   }
 }
