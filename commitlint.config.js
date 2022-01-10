@@ -5,9 +5,17 @@ module.exports = {
         2,
         'always',
         [
-            'feat',
-            'fix',
-            'perf',
+            'build',
+			'chore',
+			'ci',
+			'docs',
+			'feat',
+			'fix',
+			'perf',
+			'refactor',
+			'revert',
+			'style',
+			'test',
         ],
     ],
     'subject-case': [
@@ -19,7 +27,7 @@ module.exports = {
     'scope-enum': [
         2,
         'always',
-        ['Resident','Staff', 'PM', 'Payment', 'Automation']
+        ['Resident','Staff', 'PM', 'Payment', 'Automation','release']
     ],
     'references-empty': [2, 'never']
     
