@@ -1,15 +1,7 @@
 module.exports = {
     extends: ['@commitlint/config-conventional'],
 "rules": {
-    'type-enum': [
-        2,
-        'always',
-        [
-            'feat',
-            'fix',
-            'perf',
-        ],
-    ],
+    'footer-max-line-length': [1, 'always', 100],
     'subject-case': [
         0,
         'never',
@@ -19,7 +11,7 @@ module.exports = {
     'scope-enum': [
         2,
         'always',
-        ['Resident','Staff', 'PM', 'Payment', 'Automation']
+        ['Resident','Staff', 'PM', 'Payment', 'Automation','release']
     ],
     'references-empty': [2, 'never']
     
