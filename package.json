@@ -1,6 +1,6 @@
 {
   "name": "version-poc1",
-  "version": "0.0.0-development",
+  "version": "8.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,8 @@
     "@commitlint/cli": "^16.0.1",
     "@commitlint/config-conventional": "^16.0.0",
     "@commitlint/cz-commitlint": "^16.0.0",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
     "commitizen": "^4.2.4",
     "husky": "^7.0.4",
     "semantic-release": "^18.0.1"
@@ -38,6 +40,28 @@
         "name": "staging1",
         "prerelease": true
       }
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n RISE-${nextRelease.version} ${nextRelease.notes}"
+        }
+      ],
+      "@semantic-release/github"
     ]
   },
   "publishConfig": {
