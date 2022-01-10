@@ -6,7 +6,7 @@ module.exports.helloWorld = function () {
 
     console.log("new feature")
 
-    console.log("pull request validation 2")
+    console.log("pull request validation 22")
 
 
   };
