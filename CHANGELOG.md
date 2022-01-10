@@ -1,3 +1,13 @@
+## [8.0.2](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.0.1...v8.0.2) (2022-01-10)
+
+
+### Bug Fixes
+
+* **Resident,Staff:** ok ([84efe85](https://github.com/vijay-bhatt-vts/version-poc/commit/84efe8542f8ee347ee18f296dcb8ab0375d67ee3))
+* **Resident,Staff:** ok ([122fc2b](https://github.com/vijay-bhatt-vts/version-poc/commit/122fc2b0f6b09895405a38b3707e787de03e87cf))
+* **Resident,Staff:** OK ([b72f857](https://github.com/vijay-bhatt-vts/version-poc/commit/b72f8570fa82028c3fb5e86635e08ff3a56d1236))
+* **Resident:** OK ([cac863c](https://github.com/vijay-bhatt-vts/version-poc/commit/cac863c4233d401b646b45472d33870044007416))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
