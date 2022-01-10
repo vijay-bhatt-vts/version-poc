@@ -1,3 +1,10 @@
+## [8.1.1-staging1.2](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.1.1-staging1.1...v8.1.1-staging1.2) (2022-01-10)
+
+
+### Bug Fixes
+
+* **Resident,Staff:** ok ([07a8661](https://github.com/vijay-bhatt-vts/version-poc/commit/07a86610921202b211bbb51f0fb4391f4cf6fee1))
+
 ## [8.1.1-staging1.1](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.1.0...v8.1.1-staging1.1) (2022-01-10)
 
 
