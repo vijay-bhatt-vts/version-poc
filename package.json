@@ -23,6 +23,7 @@
     "@commitlint/cli": "^16.0.1",
     "@commitlint/config-conventional": "^16.0.0",
     "@commitlint/cz-commitlint": "^16.0.0",
+    "@semantic-release/changelog": "^6.0.1",
     "commitizen": "^4.2.4",
     "husky": "^7.0.4",
     "semantic-release": "^18.0.1"
@@ -38,6 +39,18 @@
         "name": "staging1",
         "prerelease": true
       }
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      "@semantic-release/npm",
+      "@semantic-release/github" 
     ]
   },
   "publishConfig": {
