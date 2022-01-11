@@ -5,7 +5,7 @@ module.exports.helloWorld = function () {
 
    console.log("main2 major main fix")
 
-   console.log("main2 major after main major fix")
+   console.log("main2 major after main one more")
 
 
 
