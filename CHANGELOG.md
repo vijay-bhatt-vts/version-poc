@@ -1,3 +1,16 @@
+# [9.0.0](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.8.3...v9.0.0) (2022-01-11)
+
+
+### Features
+
+* **Resident:** ok ([f27bbad](https://github.com/vijay-bhatt-vts/version-poc/commit/f27bbade001e2ff481fe8719accab57f7bb74b98))
+
+
+### BREAKING CHANGES
+
+* **Resident:** ok
+RISE-1234
+
 ## [8.8.3](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.8.2...v8.8.3) (2022-01-11)
 
 
