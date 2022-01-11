@@ -1,7 +1,13 @@
+
+# [8.4.0](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.3.0...v8.4.0) (2022-01-11)
+
 # [8.4.0-staging1.1](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.3.0...v8.4.0-staging1.1) (2022-01-11)
 
 
+
 ### Features
+
+* **Resident:** ok ([afe48e2](https://github.com/vijay-bhatt-vts/version-poc/commit/afe48e2ad220c472e9864d8517d29add7b702916))
 
 * **Resident:** ok ([13080f8](https://github.com/vijay-bhatt-vts/version-poc/commit/13080f8d6f3354d233611a52fab3cc6f84a29215))
 
