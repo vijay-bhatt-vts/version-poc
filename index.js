@@ -14,6 +14,7 @@ module.exports.helloWorld = function () {
    console.log("minor")
 >>>>>>> 0621df5d3259e6ef049b6e5dbbde482976832e2e
 
+   console.log("fix1")
 
    console.log("one more fix")
 
