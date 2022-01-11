@@ -1,6 +1,6 @@
 {
   "name": "version-poc1",
-  "version": "8.2.0-staging1.3",
+  "version": "8.2.0-staging.3",
   "description": "",
   "main": "index.js",
   "scripts": {
