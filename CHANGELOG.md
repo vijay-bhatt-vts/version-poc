@@ -1,7 +1,14 @@
+
+## [8.4.1](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.4.0...v8.4.1) (2022-01-11)
+
 # [8.5.0-staging1.1](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.4.0...v8.5.0-staging1.1) (2022-01-11)
 
 
+
 ### Bug Fixes
+
+
+* **Resident:** ok ([e567c91](https://github.com/vijay-bhatt-vts/version-poc/commit/e567c9127475296bafad5e43db36b6562ab979b6))
 
 * **1:** 1 ([f2bdf63](https://github.com/vijay-bhatt-vts/version-poc/commit/f2bdf63287edce3ef2014f858afe1f7cfd05e858))
 * **2:** 2 ([97783ef](https://github.com/vijay-bhatt-vts/version-poc/commit/97783efd40d0cda9a595fd31a63670bc552b667d))
@@ -49,6 +56,7 @@
 * **Resident:** ok ([13080f8](https://github.com/vijay-bhatt-vts/version-poc/commit/13080f8d6f3354d233611a52fab3cc6f84a29215))
 * **scripts:** scripts ([ebe691f](https://github.com/vijay-bhatt-vts/version-poc/commit/ebe691fc69daaa28eca6c8b244356424f49b8b43))
 * **scripts:** scripts ([a818365](https://github.com/vijay-bhatt-vts/version-poc/commit/a818365d1cd60b1103de7d0fef5dadeb95bf148d))
+
 
 # [8.4.0](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.3.0...v8.4.0) (2022-01-11)
 
