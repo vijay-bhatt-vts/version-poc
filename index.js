@@ -10,7 +10,7 @@ module.exports.helloWorld = function () {
    console.log("feature 1234")
 
 
-   console.log("feature major change")
+   console.log("major changes")
 
 
 
