@@ -2,11 +2,8 @@ console.log("check pull request");
 
 module.exports.helloWorld = function () {
 
-   console.log("staging1 again")
+   console.log("staging workflow 1 push")
 
-    console.log("new feature")
-
-    console.log("pull request validation 223")
 
 
   };
