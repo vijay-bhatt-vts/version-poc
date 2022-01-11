@@ -1,9 +1,35 @@
+
 # [8.2.0-staging.1](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.1.4-staging.1...v8.2.0-staging.1) (2022-01-11)
+
+# [8.2.0-staging1.1](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.1.5...v8.2.0-staging1.1) (2022-01-11)
+
+
+### Bug Fixes
+
+* **Resident,Staff:** ok ([53702ad](https://github.com/vijay-bhatt-vts/version-poc/commit/53702ada6b2f8fe9f4dccbf942a13ba05a33467f))
 
 
 ### Features
 
+
 * **Resident:** ok ([c2e79b4](https://github.com/vijay-bhatt-vts/version-poc/commit/c2e79b41df0ec5a27d603042b235d91aaca7ede0))
+
+* **Resident,Staff:** ok ([6f61a0d](https://github.com/vijay-bhatt-vts/version-poc/commit/6f61a0d1f193f562fff1d50f3c65d9420069ecea))
+
+## [8.1.5](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.1.4...v8.1.5) (2022-01-10)
+
+
+### Bug Fixes
+
+* **Resident,Staff:** ok ([486ab05](https://github.com/vijay-bhatt-vts/version-poc/commit/486ab055c831584eef699a253fcbe22855792909))
+
+## [8.1.4](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.1.3...v8.1.4) (2022-01-10)
+
+
+### Bug Fixes
+
+* **Resident,Staff:** ok ([78147e4](https://github.com/vijay-bhatt-vts/version-poc/commit/78147e4fe96d5da790db8f38021ec4f534055585))
+
 
 ## [8.1.4-staging.1](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.1.3...v8.1.4-staging.1) (2022-01-10)
 
