@@ -8,6 +8,7 @@ module.exports.helloWorld = function () {
 
    console.log("one major fix")
 
+  console.log("merging to staging")
 
   };
 
