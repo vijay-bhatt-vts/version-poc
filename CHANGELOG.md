@@ -1,3 +1,15 @@
+# [8.6.0](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.5.0...v8.6.0) (2022-01-11)
+
+
+### Bug Fixes
+
+* **Resident,Staff:** ok ([0c707fa](https://github.com/vijay-bhatt-vts/version-poc/commit/0c707fac5d45253693d640b5cc59c47523fa4600))
+
+
+### Features
+
+* **Resident:** ok ([5d07101](https://github.com/vijay-bhatt-vts/version-poc/commit/5d071016f9b6fd09f144fa398ee3d3edfb908fbb))
+
 # [8.5.0](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.4.1...v8.5.0) (2022-01-11)
 
 
