@@ -1,3 +1,12 @@
+## [9.0.1](https://github.com/vijay-bhatt-vts/version-poc/compare/v9.0.0...v9.0.1) (2022-01-11)
+
+
+### Bug Fixes
+
+* **Resident:** fix ([a6e888d](https://github.com/vijay-bhatt-vts/version-poc/commit/a6e888db3ad1e53aed1e9941a010c3e4e2bcfff6))
+* **Resident:** ok ([deba7bd](https://github.com/vijay-bhatt-vts/version-poc/commit/deba7bdab28e6f5837e3967d7c8f433d94104253))
+* **Resident:** ok ([dc91cc1](https://github.com/vijay-bhatt-vts/version-poc/commit/dc91cc13903f6220615dbd5e10178587af80e0e5))
+
 ## [8.8.5](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.8.4...v8.8.5) (2022-01-11)
 
 
