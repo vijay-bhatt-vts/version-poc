@@ -1,3 +1,54 @@
+# [8.5.0-staging.1](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.4.1...v8.5.0-staging.1) (2022-01-11)
+
+
+### Bug Fixes
+
+* **1:** 1 ([f2bdf63](https://github.com/vijay-bhatt-vts/version-poc/commit/f2bdf63287edce3ef2014f858afe1f7cfd05e858))
+* **2:** 2 ([97783ef](https://github.com/vijay-bhatt-vts/version-poc/commit/97783efd40d0cda9a595fd31a63670bc552b667d))
+* **3:** 3 ([95de0e5](https://github.com/vijay-bhatt-vts/version-poc/commit/95de0e52df783a01facb9977bcb36723ce6d7b31))
+* **4:** 4 ([d32a234](https://github.com/vijay-bhatt-vts/version-poc/commit/d32a234346d92e5eccd71913b8bd6d48285d0d09))
+* **456:** 456 ([95c314f](https://github.com/vijay-bhatt-vts/version-poc/commit/95c314ff4ba42fe7a943b0155991f7f49f3e6b0e))
+* **5:** 5 ([972ef9e](https://github.com/vijay-bhatt-vts/version-poc/commit/972ef9ed18906ff49e33b97e9b2b765de5afc598))
+* **6:** 6 ([8371a23](https://github.com/vijay-bhatt-vts/version-poc/commit/8371a23a47221f574df839963eb84231eea8e979))
+* **7:** 7 ([f4585fc](https://github.com/vijay-bhatt-vts/version-poc/commit/f4585fccb1ca90e1cb4b270ea8c097473a630d6d))
+* **8:** 8 ([cf6d52c](https://github.com/vijay-bhatt-vts/version-poc/commit/cf6d52c6ea1762229bd208eb51102efce8d2873b))
+* **9:** 9 ([1147547](https://github.com/vijay-bhatt-vts/version-poc/commit/11475479523311b6c446dd55b1045a4919c64d24))
+* **ab:** ab ([9f1fc68](https://github.com/vijay-bhatt-vts/version-poc/commit/9f1fc6850aede2d6daa2e87ef1e683b15a9f6487))
+* **abc:** abc ([32fd08c](https://github.com/vijay-bhatt-vts/version-poc/commit/32fd08c24120505e40db6e3fc53b18d52db2a866))
+* **cd:** cD ([0ea3fb5](https://github.com/vijay-bhatt-vts/version-poc/commit/0ea3fb5ff3f878b35b58f7d4b1d6d8c8bf5457ec))
+* **dcb:** dcb ([ea115d2](https://github.com/vijay-bhatt-vts/version-poc/commit/ea115d2d32f8a5c5552683bb5474e88d7784e025))
+* **def:** def ([82342e6](https://github.com/vijay-bhatt-vts/version-poc/commit/82342e6dbfdcefa4e52f7c27f812bc247317cdee))
+* **def:** def ([7fdba9e](https://github.com/vijay-bhatt-vts/version-poc/commit/7fdba9eaefb496e329b9b3be2165e6500adb326a))
+* **fic:** fix ([087f878](https://github.com/vijay-bhatt-vts/version-poc/commit/087f878cf8d97adaa3a3bdcae1902a645b20c714))
+* **fix:** bug fix on preprod ([2f9d85b](https://github.com/vijay-bhatt-vts/version-poc/commit/2f9d85be573e66aebc4321e7e3e8bf17780e08d2))
+* **fix:** fix ([91b5004](https://github.com/vijay-bhatt-vts/version-poc/commit/91b5004b69ff00ed4a3b4fbc1a82b07a203bacca))
+* **fix:** fix ([963cde1](https://github.com/vijay-bhatt-vts/version-poc/commit/963cde1bda5656f54d6d25bb4a8ca90f1b233456))
+* **fix:** fix ([7d9b2fb](https://github.com/vijay-bhatt-vts/version-poc/commit/7d9b2fbed1de19fa317f38352d298fb19e889454))
+* **fix:** fix ([3e92a1d](https://github.com/vijay-bhatt-vts/version-poc/commit/3e92a1d53cd1df9c745229633fc7ff5ce3b4a499))
+* **fix:** fix ([df3badb](https://github.com/vijay-bhatt-vts/version-poc/commit/df3badb4999cf25a9e38543d37cab8d99375c816))
+* **hj:** hj ([92efdb2](https://github.com/vijay-bhatt-vts/version-poc/commit/92efdb2efa83c48a4c4d4f4c4a004ab1910df6ea))
+* **move:** move ([b2824b3](https://github.com/vijay-bhatt-vts/version-poc/commit/b2824b388ddfe9fa5c45ca3bf00324557e1b5908))
+* **op:** op ([37081f4](https://github.com/vijay-bhatt-vts/version-poc/commit/37081f41683a2954c289993f8599ecdaab747bb3))
+* **Resident,Staff:** ok ([ab5ea43](https://github.com/vijay-bhatt-vts/version-poc/commit/ab5ea4391d52c1ca9c647cba2431db3492454001))
+* **Resident,Staff:** ok ([34f7b77](https://github.com/vijay-bhatt-vts/version-poc/commit/34f7b77290792a483be34f4a5fe962005d7758a2))
+* **Resident:** ok ([b975284](https://github.com/vijay-bhatt-vts/version-poc/commit/b9752843f7868fe0ceb6e97c710f4d18dde4aebf))
+* **simple:** simple ([489c36e](https://github.com/vijay-bhatt-vts/version-poc/commit/489c36eccb88ff7796f0c2d35a70e2d3d2a5b6f2))
+* **skip:** skip ([083ae19](https://github.com/vijay-bhatt-vts/version-poc/commit/083ae199e133da5637765b6adef9b25c4a9480c5))
+* **test:** test ([7cbafce](https://github.com/vijay-bhatt-vts/version-poc/commit/7cbafcef2e93aef53d9da6e812c7fcde38788f7d))
+* **y:** y ([3b9a425](https://github.com/vijay-bhatt-vts/version-poc/commit/3b9a4256cfd8bad53005aa7839353703693079b3))
+
+
+### Features
+
+* **fix:** fix ([a853bbf](https://github.com/vijay-bhatt-vts/version-poc/commit/a853bbf05d19f2efc25452e70747e4cd139fda86))
+* **fix:** fix ([a43d902](https://github.com/vijay-bhatt-vts/version-poc/commit/a43d9020f29500d7108a36467d7374171ab26c56))
+* **package:** package ([8b8f89d](https://github.com/vijay-bhatt-vts/version-poc/commit/8b8f89d6cd87e083c8133c60b852d6ab28b3b4bb))
+* **package:** preprod ([d24a864](https://github.com/vijay-bhatt-vts/version-poc/commit/d24a864b80467ae477a6bc7f5f1267ac73950184))
+* **Resident:** ok ([43a7ddb](https://github.com/vijay-bhatt-vts/version-poc/commit/43a7ddb2131e7b030056e9f6df8706765aa7ea80))
+* **Resident:** ok ([36a70d3](https://github.com/vijay-bhatt-vts/version-poc/commit/36a70d3db3bbcfa9d810963e81cdfd785b08daeb))
+* **Resident:** ok ([13080f8](https://github.com/vijay-bhatt-vts/version-poc/commit/13080f8d6f3354d233611a52fab3cc6f84a29215))
+* **scripts:** scripts ([ebe691f](https://github.com/vijay-bhatt-vts/version-poc/commit/ebe691fc69daaa28eca6c8b244356424f49b8b43))
+* **scripts:** scripts ([a818365](https://github.com/vijay-bhatt-vts/version-poc/commit/a818365d1cd60b1103de7d0fef5dadeb95bf148d))
 
 # [8.5.0-staging1.2](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.5.0-staging1.1...v8.5.0-staging1.2) (2022-01-11)
 
