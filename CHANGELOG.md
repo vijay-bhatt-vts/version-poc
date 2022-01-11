@@ -1,3 +1,10 @@
+# [8.2.0-staging1.2](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.2.0-staging1.1...v8.2.0-staging1.2) (2022-01-11)
+
+
+### Features
+
+* **Resident:** ok ([c2e79b4](https://github.com/vijay-bhatt-vts/version-poc/commit/c2e79b41df0ec5a27d603042b235d91aaca7ede0))
+
 # [8.2.0-staging.2](https://github.com/vijay-bhatt-vts/version-poc/compare/v8.2.0-staging.1...v8.2.0-staging.2) (2022-01-11)
 
 
