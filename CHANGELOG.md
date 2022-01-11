@@ -1,3 +1,16 @@
+# [10.0.0-staging1.1](https://github.com/vijay-bhatt-vts/version-poc/compare/v9.0.2...v10.0.0-staging1.1) (2022-01-11)
+
+
+### Features
+
+* **Resident:** ok ([1fb6d94](https://github.com/vijay-bhatt-vts/version-poc/commit/1fb6d945c312d4e891caa08efc17bb06557b68fc))
+
+
+### BREAKING CHANGES
+
+* **Resident:** ok
+RISE-12345
+
 ## [9.0.2](https://github.com/vijay-bhatt-vts/version-poc/compare/v9.0.1...v9.0.2) (2022-01-11)
 
 
