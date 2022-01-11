@@ -52,11 +52,7 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm ci 
-        cache: 'npm'
-    - run: npm ci
-    - name: Update package.json publish tag
-      run: ./scripts/update_tag.sh  
+    - run: npm ci  
     - run: npm run semantic-release 
       env: 
          NPM_TOKEN: ${{secrets.NPM_TOKEN }}
