@@ -1,6 +1,8 @@
 {
   "name": "version-poc1",
+
   "version": "8.2.0",
+
   "description": "",
   "main": "index.js",
   "scripts": {
