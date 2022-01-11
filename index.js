@@ -5,7 +5,7 @@ module.exports.helloWorld = function () {
 
    console.log("main branch fix major")
 
-    console.log("major1")
+    console.log("major1 fix")
 
 
 
