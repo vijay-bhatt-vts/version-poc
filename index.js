@@ -3,12 +3,10 @@ console.log("check pull request");
 module.exports.helloWorld = function () {
 
 
-  console.log("checking staging 1")
-  console.log("main 1 staging 1")
+  console.log("main123")
 
-  console.log("statging and staging1 furthur")
+  console.log("main234 in main")
 
-  console.log("change123 one more time abc staging staging1")
 
   };
 
