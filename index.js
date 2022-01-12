@@ -2,11 +2,7 @@ console.log("check pull request");
 
 module.exports.helloWorld = function () {
 
-
-  console.log("main123")
-
-  console.log("main234 in main")
-
+console.log("staging2 ka pehla build ke upar staging1")
 
   };
 
