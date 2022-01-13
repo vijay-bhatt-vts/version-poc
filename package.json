@@ -1,6 +1,7 @@
 {
   "name": "version-poc1",
-  "version": "8.4.0",
+  "version": "10.0.0-staging1.1",
+
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -33,11 +34,23 @@
     "branches": [
       "main",
       {
+        "name": "main2",
+        "channel": "main2"
+      },
+      {
         "name": "staging",
         "prerelease": true
       },
       {
         "name": "staging1",
+        "prerelease": true
+      },
+      {
+        "name": "staging2",
+        "prerelease": true
+      },
+      {
+        "name": "staging3",
         "prerelease": true
       }
     ],
@@ -51,16 +64,6 @@
         }
       ],
       "@semantic-release/npm",
-      [
-        "@semantic-release/git",
-        {
-          "assets": [
-            "CHANGELOG.md",
-            "package.json"
-          ],
-          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n RISE-${nextRelease.version} ${nextRelease.notes}"
-        }
-      ],
       "@semantic-release/github"
     ]
   },
