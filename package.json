@@ -34,10 +34,6 @@
     "branches": [
       "main",
       {
-        "name": "main2",
-        "channel": "main2"
-      },
-      {
         "name": "staging",
         "prerelease": true
       },
