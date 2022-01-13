@@ -60,7 +60,7 @@
           {"type": "docs",  "release": "patch"},
           {"type": "refactor", "release": "patch"},
           {"type": "style", "release": "patch"},
-          {"subject": "abc", "release": "patch"}
+          {"subject": "ab", "release": "patch"}
         ],
         "parserOpts": {
           "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
