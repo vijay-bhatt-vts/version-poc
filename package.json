@@ -54,8 +54,7 @@
       ["@semantic-release/commit-analyzer", {
         "releaseRules": [
           {"type": "docs",  "release": "minor"},
-          {"header": "*", "release": "patch"},
-          {"merge": "*", "release": "patch"}
+          {"header": "*", "release": "patch"}
         ],
         "parserOpts": {
           "mergePattern": "Merge pull request *",
