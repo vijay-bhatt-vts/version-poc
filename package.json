@@ -55,7 +55,7 @@
         "releaseRules": [
           {"type": "docs",  "release": "minor"},
           {"header": "*", "release": "patch"},
-          {"header": "*", "release": "patch"}
+          {"merge": "*", "release": "patch"}
         ],
         "parserOpts": {
           "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
