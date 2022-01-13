@@ -48,6 +48,10 @@
       {
         "name": "staging2",
         "prerelease": true
+      },
+      {
+        "name": "staging3",
+        "prerelease": true
       }
     ],
     "plugins": [
