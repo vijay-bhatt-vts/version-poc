@@ -34,10 +34,6 @@
     "branches": [
       "main",
       {
-        "name": "main2",
-        "channel": "main2"
-      },
-      {
         "name": "staging",
         "prerelease": true
       },
@@ -57,10 +53,8 @@
     "plugins": [
       ["@semantic-release/commit-analyzer", {
         "releaseRules": [
-          {"type": "docs",  "release": "patch"},
-          {"type": "refactor", "release": "patch"},
-          {"type": "style", "release": "patch"},
-          {"subject": "ab", "release": "patch"}
+          {"type": "docs",  "release": "minor"},
+          {"header": "*", "release": "patch"}
         ],
         "parserOpts": {
           "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
