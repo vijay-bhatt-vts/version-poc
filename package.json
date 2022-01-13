@@ -57,10 +57,10 @@
     "plugins": [
       ["@semantic-release/commit-analyzer", {
         "releaseRules": [
-          {"type": "docs",  "release": "patch"},
+          {"type": "docs",  "release": "minor"},
           {"type": "refactor", "release": "patch"},
           {"type": "style", "release": "patch"},
-          {"subject": "ab", "release": "patch"}
+          {"header": "*", "release": "patch"}
         ],
         "parserOpts": {
           "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
