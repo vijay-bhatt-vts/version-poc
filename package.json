@@ -84,7 +84,6 @@
     ]
   },
   "publishConfig": {
-    "access": "public",
     "@vijay-bhatt-vts:registry": "https://npm.pkg.github.com"
   },
   "config": {
