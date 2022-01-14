@@ -70,6 +70,3 @@ const config = {
   
   module.exports = config
 
-['@semantic-release/changelog', {
-  'changelogFile': `CHANGELOG_${branch}.md`,
-}],
