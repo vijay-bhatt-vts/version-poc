@@ -47,7 +47,7 @@ jobs:
     needs: [quality]
     permissions:
       packages: write
-      contents: read
+      contents: write
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
