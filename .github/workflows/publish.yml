@@ -39,9 +39,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci 
-    - name: Extract branch name
-      shell: bash
-      run: echo "::set-env name=BRANCH_NAME::$(echo ${GITHUB_REF#refs/heads/} | sed 's/\//_/g')"
     - run: npm run semantic-release
       env: 
          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
