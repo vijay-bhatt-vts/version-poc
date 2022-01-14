@@ -10,10 +10,6 @@
     "semantic-release": "semantic-release",
     "commit": "git-cz"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/vijay-bhatt-vts/version-poc.git"
-  },
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -76,9 +72,13 @@
       [
         "@semantic-release/changelog",
         {
-          "changelogFile": "CHANGELOG.md"
+          "changelogFile": "docs/CHANGELOG_${options.branch}.md"
         }
       ],
+      ["@semantic-release/git", {
+        "assets": [ "docs"],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }],
       "@semantic-release/npm",
       "@semantic-release/github"
     ]
@@ -89,7 +89,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "@vijay-bhatt-vts:registry": "https://npm.pkg.github.com"
+    "@vijay-bhatt-vts:registry": "https://registry.npmjs.org"
   },
   "config": {
     "commitizen": {
