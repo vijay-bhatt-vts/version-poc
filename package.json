@@ -1,5 +1,5 @@
 {
-  "name": "version-poc1",
+  "name": "@vijay-bhatt-vts/version-poc1",
   "version": "10.0.0-staging1.1",
 
   "description": "",
@@ -9,10 +9,6 @@
     "test": "echo \"Error: no test specified\"",
     "semantic-release": "semantic-release",
     "commit": "git-cz"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/vijay-bhatt-vts/version-poc.git"
   },
   "author": "",
   "license": "ISC",
@@ -30,61 +26,13 @@
     "husky": "^7.0.4",
     "semantic-release": "^18.0.1"
   },
-  "release": {
-    "branches": [
-      "main",
-      {
-        "name": "staging",
-        "prerelease": true
-      },
-      {
-        "name": "staging1",
-        "prerelease": true
-      },
-      {
-        "name": "staging2",
-        "prerelease": true
-      },
-      {
-        "name": "staging3",
-        "prerelease": true
-      }
-    ],
-   
-    "plugins": [
-      ["@semantic-release/commit-analyzer", {
-        "releaseRules": [
-          {"breaking": true, "release": "major"},
-          {"revert": true, "release": "patch"},
-          {"type": "feat", "release": "minor"},
-          {"type": "fix", "release": "patch"},
-          {"type": "perf", "release": "patch"},
-          {"type": "docs", "release": "patch"},
-          {"type": "refactor", "release": "patch"},
-          {"type": "style", "release": "patch"},
-          {"type": "test", "release": "patch"},
-          {"type": "build", "release": "patch"},
-          {"type": "ci", "release": "patch"},
-          {"type": "chore", "release": "patch"},
-          {"header": "**", "release": "patch"}
-        ],
-        "parserOpts": {
-          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
-        }
-      }],
-      "@semantic-release/release-notes-generator",
-      [
-        "@semantic-release/changelog",
-        {
-          "changelogFile": "CHANGELOG.md"
-        }
-      ],
-      "@semantic-release/npm",
-      "@semantic-release/github"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vijay-bhatt-vts/version-poc.git"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "@vijay-bhatt-vts:registry": "https://registry.npmjs.org"
   },
   "config": {
     "commitizen": {
