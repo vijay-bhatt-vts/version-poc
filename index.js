@@ -5,6 +5,8 @@ module.exports.helloWorld = function () {
 console.log("main current state staging")
 console.log("main current state hotfix 1234")
 
+console.log("github registry token")
+
 
   };
 
