@@ -50,7 +50,7 @@ const config = {
           }
         ],
         ["@semantic-release/git", {
-          "assets": [ "releases"],
+          "assets": [ "docs"],
           "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
         }],
         "@semantic-release/npm",
