@@ -85,7 +85,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "@rise:registry": "https://registry.npmjs.org/"
+    "@vts-rise-vijay:registry": "https://npm.pkg.github.com"
   },
   "config": {
     "commitizen": {
