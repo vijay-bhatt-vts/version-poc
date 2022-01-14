@@ -1,5 +1,5 @@
 {
-  "name": "@vts-rise-vijay/version-poc1",
+  "name": "@vijay-bhatt-vts/version-poc1",
   "version": "10.0.0-staging1.1",
 
   "description": "",
@@ -85,7 +85,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "@vts-rise-vijay:registry": "https://npm.pkg.github.com"
+    "@vijay-bhatt-vts:registry": "https://npm.pkg.github.com"
   },
   "config": {
     "commitizen": {
