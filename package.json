@@ -72,7 +72,7 @@
       [
         "@semantic-release/changelog",
         {
-          "changelogFile": "docs/CHANGELOG_${options.branch}.md"
+          "changelogFile": "docs/CHANGELOG_${branch.name}.md"
         }
       ],
       ["@semantic-release/git", {
