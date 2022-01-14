@@ -45,6 +45,9 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ contains(github.ref, 'main') || contains(github.ref, 'staging')}}
     needs: [quality]
+    permissions:
+      packages: write
+      contents: read
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
