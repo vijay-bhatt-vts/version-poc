@@ -84,7 +84,8 @@
     ]
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "@rise:registry": "https://registry.npmjs.org/"
   },
   "config": {
     "commitizen": {
