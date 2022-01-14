@@ -55,6 +55,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         registry-url: https://npm.pkg.github.com/
+        scope: '@vijay-bhatt-vts'
     - run: npm ci 
     - run: npm run semantic-release 
       env: 
