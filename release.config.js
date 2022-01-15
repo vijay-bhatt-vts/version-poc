@@ -35,8 +35,7 @@ const config = {
             {"type": "test", "release": "patch"},
             {"type": "build", "release": "patch"},
             {"type": "ci", "release": "patch"},
-            {"type": "chore", "release": "patch"},
-            {"header": "**", "release": "patch"}
+            {"type": "chore", "release": "patch"}
           ],
           "parserOpts": {
             "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
