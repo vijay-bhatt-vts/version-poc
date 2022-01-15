@@ -2,9 +2,11 @@
 
 console.log($1)
 
- 
+$1.forEach(el => {
+    console.log(el.message)
+})
 
-# npx i -g conventional-commits-parser
+ 
 
 
 
