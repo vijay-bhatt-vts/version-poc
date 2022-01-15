@@ -6,7 +6,7 @@ arraylength=${#arr[@]}
 
 for (( i=0; i<${arraylength}; i++ ));
 do
-  jq -r '.arr[$i] | keys[] as $k | "\($k), \(.[$k])"'
+  jq -r '.arr[0] | keys[] as $k | "\($k), \(.[$k])"'
 done
 
 
