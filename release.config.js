@@ -22,26 +22,26 @@ const config = {
         }
       ],
       "plugins": [
-        ["@semantic-release/commit-analyzer", {
-          "releaseRules": [
-            {"breaking": true, "release": "major"},
-            {"revert": true, "release": "patch"},
-            {"type": "feat", "release": "minor"},
-            {"type": "fix", "release": "patch"},
-            {"type": "perf", "release": "patch"},
-            {"type": "docs", "release": "patch"},
-            {"type": "refactor", "release": "patch"},
-            {"type": "style", "release": "patch"},
-            {"type": "test", "release": "patch"},
-            {"type": "build", "release": "patch"},
-            {"type": "ci", "release": "patch"},
-            {"type": "chore", "release": "patch"},
-            // {"header": "**", "release": "patch"}
-          ],
-          "parserOpts": {
-            "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
-          }
-        }],
+        // ["@semantic-release/commit-analyzer", {
+        //   "releaseRules": [
+        //     {"breaking": true, "release": "major"},
+        //     {"revert": true, "release": "patch"},
+        //     {"type": "feat", "release": "minor"},
+        //     {"type": "fix", "release": "patch"},
+        //     {"type": "perf", "release": "patch"},
+        //     {"type": "docs", "release": "patch"},
+        //     {"type": "refactor", "release": "patch"},
+        //     {"type": "style", "release": "patch"},
+        //     {"type": "test", "release": "patch"},
+        //     {"type": "build", "release": "patch"},
+        //     {"type": "ci", "release": "patch"},
+        //     {"type": "chore", "release": "patch"},
+        //     // {"header": "**", "release": "patch"}
+        //   ],
+        //   "parserOpts": {
+        //     "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
+        //   }
+        // }],
         "@semantic-release/release-notes-generator",
         [
           "@semantic-release/changelog",
@@ -49,9 +49,9 @@ const config = {
             "changelogFile": `docs/CHANGELOG_${branch}.md`
           }
         ],
-        // ["@semantic-release/exec", {
-        //     "prepare":"./analyzeCommits.sh ${nextRelease}"
-        //   }],
+        ["@semantic-release/exec", {
+            "analyzeCommitsCmd":"./analyzeCommits.sh ${commits}"
+          }],
         ["@semantic-release/git", {
           "assets": [ "docs"],
           "message": "chore(release): ${nextRelease.version} [skip ci] \n Release notes \n RISE-00000"
