@@ -2,10 +2,9 @@
 
 arg1="$1"
 
-for i in "${arg1[@]}"
- do
-  jq -r '$i | to_entries[] | "\(.key), \(.value)"'
- done
+jq -c '.[]' $arg1 | while read i; do
+    echo $i
+done
 
  
 
