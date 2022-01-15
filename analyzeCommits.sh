@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-echo $1
+
 arg1="$1"
 
 for i in "${arg1[@]}"
  do
-  echo $i
+  jq -r '$i | to_entries[] | "\(.key), \(.value)"'
  done
 
  
