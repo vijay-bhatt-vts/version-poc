@@ -49,24 +49,28 @@ const config = {
             "changelogFile": `docs/CHANGELOG_${branch}.md`
           }
         ],
+        // ["@semantic-release/exec", {
+        //     "analyzeCommitsCmd":"./analyzeCommits.sh ${commits} ${nextRelease}"
+        //   }],
         ["@semantic-release/git", {
           "assets": [ "docs"],
-          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+          "message": "chore(release): ${nextRelease.version} [skip ci] \n Release notes \n RISE-00000"
         }],
         "@semantic-release/npm",
         "@semantic-release/github"
       ]
   }
   
-  if (config.branches.some(it => it === branch || (it.name === branch && !it.prerelease))) {
-    config.plugins.push('@semantic-release/changelog', [
-      '@semantic-release/git',
-      {
-        assets: ['CHANGELOG.md'],
-        message: 'chore(release): ${nextRelease.version} \n\n${nextRelease.notes}',
-      },
-    ])
-  }
+//   if (config.branches.some(it => it === branch || (it.name === branch && !it.prerelease))) {
+
+//     config.plugins.push('@semantic-release/changelog', [
+//       '@semantic-release/git',
+//       {
+//         assets: ['CHANGELOG.md'],
+//         message: 'chore(release): ${nextRelease.version} \n\n${nextRelease.notes}',
+//       },
+//     ])
+//   }
   
   module.exports = config
 
