@@ -1,10 +1,12 @@
-#!/usr/bin/env node
+#!/usr/bin/env bash
 
-console.log($1)
+arr=$1
 
-$1.forEach(el => {
-    console.log(el.message)
-})
+for i in "${arr[@]}"
+do
+   echo "$i"
+   # or do whatever with individual element of the array
+done
 
  
 
