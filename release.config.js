@@ -49,9 +49,9 @@ const config = {
             "changelogFile": `docs/CHANGELOG_${branch}.md`
           }
         ],
-        ["@semantic-release/exec", {
-            "prepare":"./analyzeCommits.sh ${nextRelease}"
-          }],
+        // ["@semantic-release/exec", {
+        //     "prepare":"./analyzeCommits.sh ${nextRelease}"
+        //   }],
         ["@semantic-release/git", {
           "assets": [ "docs"],
           "message": "chore(release): ${nextRelease.version} [skip ci] \n Release notes \n RISE-00000"
