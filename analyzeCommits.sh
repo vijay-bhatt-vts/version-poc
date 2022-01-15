@@ -2,7 +2,7 @@
 
 arg1="$1"
 
-jq -c '.[]' $arg1 | while read i; do
+echo "$arg1" | jq -c '.[]' | while read i; do
     echo $i
 done
 
