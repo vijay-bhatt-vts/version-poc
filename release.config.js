@@ -22,26 +22,26 @@ const config = {
         }
       ],
       "plugins": [
-        // ["@semantic-release/commit-analyzer", {
-        //   "releaseRules": [
-        //     {"breaking": true, "release": "major"},
-        //     {"revert": true, "release": "patch"},
-        //     {"type": "feat", "release": "minor"},
-        //     {"type": "fix", "release": "patch"},
-        //     {"type": "perf", "release": "patch"},
-        //     {"type": "docs", "release": "patch"},
-        //     {"type": "refactor", "release": "patch"},
-        //     {"type": "style", "release": "patch"},
-        //     {"type": "test", "release": "patch"},
-        //     {"type": "build", "release": "patch"},
-        //     {"type": "ci", "release": "patch"},
-        //     {"type": "chore", "release": "patch"},
-        //     {"header": "**", "release": "patch"}
-        //   ],
-        //   "parserOpts": {
-        //     "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
-        //   }
-        // }],
+        ["@semantic-release/commit-analyzer", {
+          "releaseRules": [
+            {"breaking": true, "release": "major"},
+            {"revert": true, "release": "patch"},
+            {"type": "feat", "release": "minor"},
+            {"type": "fix", "release": "patch"},
+            {"type": "perf", "release": "patch"},
+            {"type": "docs", "release": "patch"},
+            {"type": "refactor", "release": "patch"},
+            {"type": "style", "release": "patch"},
+            {"type": "test", "release": "patch"},
+            {"type": "build", "release": "patch"},
+            {"type": "ci", "release": "patch"},
+            {"type": "chore", "release": "patch"},
+            {"header": "**", "release": "patch"}
+          ],
+          "parserOpts": {
+            "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
+          }
+        }],
         "@semantic-release/release-notes-generator",
         [
           "@semantic-release/changelog",
