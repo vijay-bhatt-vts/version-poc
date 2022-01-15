@@ -5,6 +5,13 @@ echo $1
 echo $2
 echo $3
 
-npx --no -- commitlint --edit $1
+$noVerify="[no-verify]"
+
+if [[ "$3" == *"$noVerify"* ]]; then
+  echo "Skipping commit check"
+else
+   npx --no -- commitlint --edit $1
+fi
+
 
 
