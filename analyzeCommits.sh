@@ -1,10 +1,6 @@
-#!/usr/bin/env bash
+#!/usr/bin/env node
 
-arg1="$1"
-
-echo "$arg1" | jq -c '.[]' | while read i; do
-    echo $i
-done
+console.log($1)
 
  
 
