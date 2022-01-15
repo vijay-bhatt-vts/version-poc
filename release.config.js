@@ -50,7 +50,7 @@ const config = {
           }
         ],
         ["@semantic-release/exec", {
-            "analyzeCommitsCmd":"./analyzeCommits.sh ${${nextRelease.version}}"
+            "analyzeCommitsCmd":"./analyzeCommits.sh ${nextRelease.version}"
           }],
         ["@semantic-release/git", {
           "assets": [ "docs"],
