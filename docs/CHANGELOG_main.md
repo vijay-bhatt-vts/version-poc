@@ -1,3 +1,11 @@
+## [25.1.1](https://github.com/vijay-bhatt-vts/version-poc/compare/v25.1.0...v25.1.1) (2022-01-16)
+
+
+### Bug Fixes
+
+* **Resident:** ok ([6238e25](https://github.com/vijay-bhatt-vts/version-poc/commit/6238e25d3cb4a91b3b3bcad714ad563621fc57b5))
+* **Resident:** ok ([ad7708c](https://github.com/vijay-bhatt-vts/version-poc/commit/ad7708c5d1d79d1c07345731c4c918ca3f6d767f))
+
 # [25.1.0](https://github.com/vijay-bhatt-vts/version-poc/compare/v25.0.1...v25.1.0) (2022-01-16)
 
 
