@@ -1,1 +1,9 @@
-jq -r 'to_entries[] | [ .key, .value ] | @csv' $2
+#!/usr/bin/env bash
+
+exit 0
+
+
+ 
+
+
+

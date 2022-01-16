@@ -36,7 +36,8 @@ const config = {
             {"type": "build", "release": "patch"},
             {"type": "ci", "release": "patch"},
             {"type": "chore", "release": "patch"},
-            {"header": "**", "release": "patch"}
+            {"type": "wip", "release": "patch"},
+            // {"header": "**", "release": "patch"}
           ],
           "parserOpts": {
             "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
@@ -49,9 +50,9 @@ const config = {
             "changelogFile": `docs/CHANGELOG_${branch}.md`
           }
         ],
-        // ["@semantic-release/exec", {
-        //     "analyzeCommitsCmd":"./analyzeCommits.sh ${commits} ${nextRelease}"
-        //   }],
+        ["@semantic-release/exec", {
+            "analyzeCommitsCmd":"./analyzeCommits.sh"
+          }],
         ["@semantic-release/git", {
           "assets": [ "docs"],
           "message": "chore(release): ${nextRelease.version} [skip ci] \n Release notes \n RISE-00000"
