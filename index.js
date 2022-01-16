@@ -5,7 +5,7 @@ module.exports.helloWorld = function () {
 console.log("main current state staging")
 console.log("main current state hotfix 1234")
 
-console.log("checking commit 12345")
+console.log("checking commit 123456")
 
 
   };
