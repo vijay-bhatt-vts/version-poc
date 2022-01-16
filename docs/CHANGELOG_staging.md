@@ -1,3 +1,10 @@
+## [25.1.2-staging.2](https://github.com/vijay-bhatt-vts/version-poc/compare/v25.1.2-staging.1...v25.1.2-staging.2) (2022-01-16)
+
+
+### Bug Fixes
+
+* **Resident:** OK ([ebf0410](https://github.com/vijay-bhatt-vts/version-poc/commit/ebf0410a23c55f731c68e7d4a49341f95b67c101))
+
 ## [25.1.2-staging.1](https://github.com/vijay-bhatt-vts/version-poc/compare/v25.1.1...v25.1.2-staging.1) (2022-01-16)
 
 ## [25.0.1-staging.2](https://github.com/vijay-bhatt-vts/version-poc/compare/v25.0.1-staging.1...v25.0.1-staging.2) (2022-01-16)
