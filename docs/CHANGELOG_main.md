@@ -1,3 +1,16 @@
+# [24.0.0](https://github.com/vijay-bhatt-vts/version-poc/compare/v23.1.0...v24.0.0) (2022-01-16)
+
+
+### Features
+
+* **Resident:** ok ([3982339](https://github.com/vijay-bhatt-vts/version-poc/commit/3982339ad727708e3cfdc4117cd7cd686f973abf))
+
+
+### BREAKING CHANGES
+
+* **Resident:** ok
+RISE-12345
+
 # [23.1.0](https://github.com/vijay-bhatt-vts/version-poc/compare/v23.0.38...v23.1.0) (2022-01-16)
 
 
