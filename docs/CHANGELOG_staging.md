@@ -1,3 +1,5 @@
+## [25.0.1-staging.1](https://github.com/vijay-bhatt-vts/version-poc/compare/v25.0.0...v25.0.1-staging.1) (2022-01-16)
+
 ## [23.0.36-staging.1](https://github.com/vijay-bhatt-vts/version-poc/compare/v23.0.35...v23.0.36-staging.1) (2022-01-15)
 
 
