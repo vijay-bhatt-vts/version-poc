@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo 'major'
+exit 0
 
 
  
