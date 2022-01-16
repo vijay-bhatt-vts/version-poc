@@ -34,9 +34,9 @@ const config = {
             {"type": "style", "release": "patch"},
             {"type": "test", "release": "patch"},
             {"type": "build", "release": "patch"},
-            {"type": "ci", "release": "patch"},
-            {"type": "chore", "release": "patch"},
-            {"type": "wip", "release": "patch"},
+            {"type": "ci", "release": false},
+            {"type": "chore", "release": false},
+            // {"type": "wip", "release": "patch"},
             // {"header": "**", "release": "patch"}
           ],
           "parserOpts": {
