@@ -1,6 +1,6 @@
 {
-  "name": "version-poc1",
-  "version": "8.0.6-staging1.1",
+  "name": "@vijay-bhatt-vts/version-poc1",
+  "version": "10.0.0-staging1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,10 +8,6 @@
     "test": "echo \"Error: no test specified\"",
     "semantic-release": "semantic-release",
     "commit": "git-cz"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/vijay-bhatt-vts/version-poc.git"
   },
   "author": "",
   "license": "ISC",
@@ -24,48 +20,19 @@
     "@commitlint/config-conventional": "^16.0.0",
     "@commitlint/cz-commitlint": "^16.0.0",
     "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "commitizen": "^4.2.4",
     "husky": "^7.0.4",
     "semantic-release": "^18.0.1"
   },
-  "release": {
-    "branches": [
-      "main",
-      {
-        "name": "staging",
-        "prerelease": true
-      },
-      {
-        "name": "staging1",
-        "prerelease": true
-      }
-    ],
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      [
-        "@semantic-release/changelog",
-        {
-          "changelogFile": "CHANGELOG.md"
-        }
-      ],
-      "@semantic-release/npm",
-      [
-        "@semantic-release/git",
-        {
-          "assets": [
-            "CHANGELOG.md",
-            "package.json"
-          ],
-          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n RISE-${nextRelease.version} ${nextRelease.notes}"
-        }
-      ],
-      "@semantic-release/github"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vijay-bhatt-vts/version-poc.git"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "@vijay-bhatt-vts:registry": "https://registry.npmjs.org"
   },
   "config": {
     "commitizen": {
