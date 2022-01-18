@@ -1,7 +1,7 @@
 module.exports = {
     extends: ['@commitlint/config-conventional'],
 "rules": {
-    'subject-empty': [2, 'never'],
+    //'subject-empty': [2, 'never'],
     "body-empty": [2,'never'],
     'scope-empty': [2, 'never'],
     'scope-enum': [
@@ -13,7 +13,7 @@ module.exports = {
 },
 parserPreset: {
     parserOpts: {
-        //headerPattern: /^(\w*)(?:\(([\w\$\.\-\* ]*)\))?\: (.*)$/,
+        headerPattern: /^(\w*)(?:\((.*)\))?/,
         headerCorrespondence: ["type", "scope", "subject"],
         issuePrefixesCaseSensitive : true,
         issuePrefixes: ['RISE-']
