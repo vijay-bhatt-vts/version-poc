@@ -1,7 +1,7 @@
 module.exports = {
     extends: ['@commitlint/config-conventional'],
 "rules": {
-    //'subject-empty': [2, 'never'],
+    'subject-empty': [2, 'always'],
     "body-empty": [2,'never'],
     'scope-empty': [2, 'never'],
     'scope-enum': [
@@ -9,7 +9,7 @@ module.exports = {
         'always',
         ['Resident','Staff', 'PM', 'Payment', 'Automation','release']
     ],
-    //'references-empty': [2, 'never']
+    'references-empty': [2, 'never']
 },
 parserPreset: {
     parserOpts: {
