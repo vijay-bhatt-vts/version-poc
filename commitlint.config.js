@@ -10,7 +10,6 @@ module.exports = {
         ['Resident','Staff', 'PM', 'Payment', 'Automation','release']
     ],
     //'references-empty': [2, 'never']
-
 },
 parserPreset: {
     parserOpts: {
