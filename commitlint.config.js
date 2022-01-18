@@ -18,7 +18,6 @@ module.exports = {
 },
 parserPreset: {
     parserOpts: {
-        referenceActions: null,
         issuePrefixes: ['RISE-']
     }
 },
@@ -26,6 +25,9 @@ prompt: {
     settings: {
         'enableMultipleScopes' : true
     },
+    messages:{
+        skip:['issuesBody']
+    }
 }
  
 };
