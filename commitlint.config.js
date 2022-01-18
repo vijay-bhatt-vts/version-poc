@@ -14,7 +14,7 @@ module.exports = {
 parserPreset: {
     parserOpts: {
         headerPattern: /^(\w*)(?:\((.*)\))?/,
-        headerCorrespondence: ["type", "scope", "subject"],
+        headerCorrespondence: ["type", "scope"],
         issuePrefixesCaseSensitive : true,
         issuePrefixes: ['RISE-']
     }
@@ -22,9 +22,6 @@ parserPreset: {
 prompt: {
     settings: {
         'enableMultipleScopes' : true
-    },
-    messages:{
-        skip:['issuesBody']
     }
 }
 };
