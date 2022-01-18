@@ -27,5 +27,4 @@ prompt: {
         skip:['issuesBody']
     }
 }
- 
 };
