@@ -18,6 +18,7 @@ module.exports = {
 },
 parserPreset: {
     parserOpts: {
+        issuePrefixesCaseSensitive : true,
         issuePrefixes: ['RISE-']
     }
 },
